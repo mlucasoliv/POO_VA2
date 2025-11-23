@@ -41,8 +41,7 @@ Funcionalidades principais:
 
 2. Crie as tabelas necessárias:
 
-```sql
--- Tabela de usuários
+`-- Tabela de usuários
 CREATE TABLE usuario (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -64,14 +63,13 @@ CREATE TABLE transacao (
     datahora TIMESTAMP NOT NULL DEFAULT NOW(),
     token_id INT NOT NULL,
     FOREIGN KEY (token_id) REFERENCES token(id) ON DELETE CASCADE
-);```
+);`
 
 3. Configure a classe Conexao.java com usuário, senha e nome do banco:
 
-```java
-private static final String URL = "jdbc:postgresql://localhost:5432/database";
+`private static final String URL = "jdbc:postgresql://localhost:5432/database";
 private static final String USER = "postgres";
-private static final String PASSWORD = "postgres";```
+private static final String PASSWORD = "postgres";`
 
 ### 🚀 Executando o projeto
 
