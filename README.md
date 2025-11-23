@@ -35,7 +35,7 @@ Funcionalidades principais:
 
 ## 🛠 Configuração do banco de dados
 
-1. Crie o banco de dados:
+### 1. Crie o banco de dados:
 
 `CREATE DATABASE database;`
 
@@ -65,7 +65,7 @@ Funcionalidades principais:
         FOREIGN KEY (token_id) REFERENCES token(id) ON DELETE CASCADE
     );
 
-## 3. Configure a classe Conexao.java com usuário, senha e nome do banco:
+### 3. Configure a classe Conexao.java com usuário, senha e nome do banco:
 
     private static final String URL = "jdbc:postgresql://localhost:5432/database";
     private static final String USER = "postgres";
